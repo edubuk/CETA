@@ -87,28 +87,28 @@ const Home = () => {
 
   return (
     <div className=" flex flex-col gap-6 font-open">
-      <div className="flex flex-col p-4">
+      <div className="flex flex-col sm:p-4">
         <div
-          className="mx-auto relative w-full aspect-[16/9] lg:aspect-[16/7] rounded-[8px] bg-cover bg-center mt-3"
+          className="mx-auto relative w-full aspect-[16/9] lg:aspect-[16/7] sm:rounded-[8px] bg-cover bg-center mt-3"
           style={{ backgroundImage: `url(${hero})` }}
         >
           {/* Text content on image */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col w-full items-center justify-center text-center">
-            <div className="sm:bg-[#03257E] text-white px-4  rounded-full shadow-lg">
-              <p className="text-[16px] sm:text-[20px] md:text-[28px] lg:text-[40px] font-bold w-[100%] text-center">
+            <div className="bg-[#03257E] text-white px-2  sm:rounded-full shadow-lg">
+              <p className="text-[16px] text-white sm:text-white sm:text-[20px] md:text-[28px] lg:text-[40px] font-bold w-[100%] text-center py-1 sm:py-2">
                 CETA - Certified Emerging Technologies Analyst | No-Code
               </p>
             </div>
           </div>
-          <div className="absolute bottom-0 z-10 hidden sm:flex flex-col w-full items-center justify-center text-center bg-gradient-to-r from-[#03257E] via-[#f14419] to-[#006666] p-3">
-            <p className="text-[12px] sm:text-[18px] md:text-[25px] font-bold w-[100%] text-center">
+          <div className="absolute bottom-0 z-10 sm:flex flex-col w-full items-center justify-center text-center bg-gradient-to-r from-[#03257E] via-[#f14419] to-[#006666] p-1">
+            <p className="text-[8px] sm:text-[18px] md:text-[25px] font-bold w-[100%] text-center">
               Global Gold Standard Certification Program for No-Code AI &
               Emerging Technologies Skills
             </p>
           </div>
         </div>
       </div>
-      <ThreeDot />
+   
       <div className="flex justify-center flex-col items-center w-full overflow-hidden">
         <p className="text-[#03257E] text-[25px] sm:text-[40px] md:text-[50px] font-bold uppercase text-center">
           Awards & Recognitions

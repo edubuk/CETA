@@ -1,8 +1,9 @@
 const UnderstanCeta = () => {
   return (
     <div className="flex flex-col items-center justify-center w-full h-full p-4">
-      <h2 className="text-xl sm:text-2xl md:text-3xl font-bold mb-4 text-black uppercase text-center">
-        Understanding CETA: Purpose, Impact, and Promise
+      <h2 className="font-bold text-2xl md:text-3xl mb-4 text-black uppercase text-center">
+        Understanding CETA: <span className="text-[#03257e]">Purpose</span>, <span className="text-[#f14419]">Impact</span>, <span className="text-[#006666]">and Promise</span>
+
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2">
         <div className="flex flex-col items-center justify-center p-4 gap-6">
@@ -26,7 +27,7 @@ const UnderstanCeta = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p className="text-black text-2xl">
+            <p className="text-black text-xl sm:text-2xl">
               Long-term in-demand skilling courses at afordable prices using
               no-code tools
             </p>
@@ -67,7 +68,7 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-2xl">
+            <p className="text-black text-xl sm:text-2xl">
               Record CVs of student on blockchain securely for verification
               purposes
             </p>
@@ -90,7 +91,7 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-2xl">
+            <p className="text-black text-xl sm:text-2xl">
               3-Level CETA skilling program clubbed with certification
               examination
             </p>
@@ -111,7 +112,7 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-2xl">
+            <p className="text-black text-xl sm:text-2xl">
               Extensive industry partners network help students in securing
               placements
             </p>
@@ -130,7 +131,7 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-2xl">
+            <p className="text-black text-xl sm:text-2xl">
               Recognized by NSDC as a part of the Skill-India Digital
               Accelerator Program
             </p>
@@ -149,7 +150,7 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-2xl">
+            <p className="text-black text-xl sm:text-2xl">
               Cutting Edge Curriculum tailored for students from all streams,
               without any coding background required.
             </p>
