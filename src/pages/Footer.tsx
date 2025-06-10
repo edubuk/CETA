@@ -12,21 +12,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <div className="flex flex-col bg-white sm:px-4 gap-4 border-b-8 border-[#006666]">
-      <div className="flex relative">
-        <div className="flex justify-center items-center w-full gap-4">
-          <div className="flex justify-start items-center gap-3">
-            <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#03257E]"></span>
-            <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#006666]"></span>
-            <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#F14419]"></span>
-          </div>
-        </div>
-        {/* <img
-          src={laptopImg}
-          alt="laptop-img"
-          className="absolute sm:flex md:w-[400px] md:h-[270px] w-[250px] h-[200px] -top-10 md:-top-10 right-3 hidden"
-        ></img> */}
-      </div>
-     
+    
       <div className="flex flex-wrap justify-center sm:justify-between items-center gap-8 border-b-2 border-t-2 border-gray-300 pb-3 " >
         <img src={logo} alt="logo" className="md:w-[200px] md:h-[200px] w-[152px] h-[152px]"></img>
         <div className="flex flex-col justify-center gap-4 sm:pl-16">

@@ -1,8 +1,8 @@
 import { useState, useEffect, useLayoutEffect } from "react";
 import hero from "../assets/HeroImg/hero.jpg";
-import aniJson1 from '../components/Animation/registerAnimation.json';
+import aniJson1 from "../components/Animation/registerAnimation.json";
 import UnderstanCeta from "../components/HomePageSection/UnderstanCeta";
-import Lottie from 'lottie-react';
+import Lottie from "lottie-react";
 import team1 from "../assets/Team/team1.png";
 import team2 from "../assets/Team/team2.png";
 import team3 from "../assets/Team/team3.png";
@@ -29,9 +29,8 @@ import PaymentPopup from "../components/paymentGateway/razorpay";
 import { useAuth } from "../context/auth";
 import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
+import ThreeDot from "../components/HomePageSection/ThreeDot";
 // import { DotLottieReact } from "@lottiefiles/dotlottie-react";
-
-
 
 const Home = () => {
   const [showPopup, setShowPopup] = useState<boolean>(false);
@@ -39,7 +38,6 @@ const Home = () => {
   const [paymentId, setPaymentId] = useState<boolean>(false);
 
   const [auth] = useAuth();
-
 
   useEffect(() => {
     const getPaymentId = async () => {
@@ -59,8 +57,7 @@ const Home = () => {
         console.log("data", data);
         if (data) {
           console.log("data", data);
-          if(data.paymentId)
-          setPaymentId(true);
+          if (data.paymentId) setPaymentId(true);
         }
       } catch (error) {
         console.log("error while fetching payments data", error);
@@ -70,15 +67,14 @@ const Home = () => {
   }, [showSuccessPopup]);
 
   useLayoutEffect(() => {
-  const hash = window.location.hash;
-  if (hash) {
-    const target = document.querySelector(hash);
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
+    const hash = window.location.hash;
+    if (hash) {
+      const target = document.querySelector(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
     }
-  }
-}, []);
-
+  }, []);
 
   // Auto-slide every 5 seconds
   console.log("auth values", auth.user);
@@ -105,13 +101,14 @@ const Home = () => {
             </div>
           </div>
           <div className="absolute bottom-0 z-10 hidden sm:flex flex-col w-full items-center justify-center text-center bg-gradient-to-r from-[#03257E] via-[#f14419] to-[#006666] p-3">
-              <p className="text-[12px] sm:text-[18px] md:text-[25px] font-bold w-[100%] text-center">
-                Global Gold Standard Certification Program for No-Code AI & Emerging Technologies Skills
-              </p>
+            <p className="text-[12px] sm:text-[18px] md:text-[25px] font-bold w-[100%] text-center">
+              Global Gold Standard Certification Program for No-Code AI &
+              Emerging Technologies Skills
+            </p>
           </div>
         </div>
       </div>
-
+      <ThreeDot />
       <div className="flex justify-center flex-col items-center w-full overflow-hidden">
         <p className="text-[#03257E] text-[25px] sm:text-[40px] md:text-[50px] font-bold uppercase text-center">
           Awards & Recognitions
@@ -246,8 +243,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ThreeDot />
       <UnderstanCeta />
-      
+      <ThreeDot />
       <div className="flex flex-col justify-center items-center" id="olympiad">
         <p className=" text-[#03257E] text-[25px] sm:text-[40px] md:text-[50px] font-bold text-center">
           Watch How It Works
@@ -255,22 +253,18 @@ const Home = () => {
         {/* <p className=" text-[#000000] my-4 text-[23px] sm:text-[38px] md:text-[48px] text-center">No-Code Skilling in Emerging Technologies</p> */}
       </div>
       <div className="flex justify-center items-center gap-4 p-4 w-full">
-              <div className="relative w-full max-w-[800px] aspect-video rounded-xl overflow-hidden border-4 border-gray-300 shadow-lg">
-                <iframe
-                  className="absolute top-0 left-0 w-full h-full"
-                  src="https://www.youtube.com/embed/Cua_dnoZXbo?autoplay=1&mute=1"
-                  title="Edubuk Presents: AI and Emerging Technologies Hackathon for College Student"
-                  allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            </div>
-
-      <div>
-        
-       
+        <div className="relative w-full max-w-[800px] aspect-video rounded-xl overflow-hidden border-4 border-gray-300 shadow-lg">
+          <iframe
+            className="absolute top-0 left-0 w-full h-full"
+            src="https://www.youtube.com/embed/Cua_dnoZXbo?autoplay=1&mute=1"
+            title="Edubuk Presents: AI and Emerging Technologies Hackathon for College Student"
+            allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
+          ></iframe>
+        </div>
       </div>
+      <ThreeDot />
 
       <div
         className="flex flex-col justify-center items-center bg-[#006666] p-8"
@@ -286,11 +280,7 @@ const Home = () => {
           Tech
         </p>
       </div>
-      <div className="flex justify-center items-center gap-3">
-        <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#03257E]"></span>
-        <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#006666]"></span>
-        <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#F14419]"></span>
-      </div>
+     <ThreeDot />
       <div className="flex flex-col justify-center items-center gap-8">
         <p className="text-[#03257E] text-[25px] sm:text-[40px] md:text-[50px] font-bold uppercase text-center">
           Meet Our executives
@@ -432,11 +422,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center items-center gap-3">
-        <span className=" w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#03257E]"></span>
-        <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#006666]"></span>
-        <span className="w-4 h-4 sm:w-8 sm:h-8 rounded-full bg-[#F14419]"></span>
-      </div>
+      <ThreeDot />
       <div className="flex flex-col justify-center items-center gap-8">
         <p className="text-[#03257E] text-[25px] sm:text-[40px] md:text-[50px] font-bold uppercase text-center">
           MEET OUR ADVISORS
@@ -573,14 +559,16 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ThreeDot />
       <div
         className="flex flex-wrap items-center justify-center gap-2 p-2 "
         id="register"
       >
-       
-      
-      <Lottie loop={true} animationData={aniJson1} className="w-[350px] h-[350px] md:w-[400px] md:h-[400px]"/>
-     
+        <Lottie
+          loop={true}
+          animationData={aniJson1}
+          className="w-[350px] h-[350px] md:w-[400px] md:h-[400px]"
+        />
 
         {showPopup && (
           <PaymentPopup
@@ -589,13 +577,17 @@ const Home = () => {
             setShowSuccessPopup={setShowSuccessPopup}
           />
         )}
-        <div className="flex justify-center items-center flex-col gap-2 sm:gap-1" id="ceta">
+        <div
+          className="flex justify-center items-center flex-col gap-2 sm:gap-1"
+          id="ceta"
+        >
           <div className="text-[#000] w-[330px] sm:w-[450px] uppercase text-2xl md:text-4xl lg:text-5xl font-semibold text-center">
-           CETA Program
+            CETA Program
           </div>
 
           <div className="bg-[#006666] p-4 w-[330px] sm:w-[450px] text-white text-base md:text-xl text-center rounded-md shadow">
-            Global Gold Standard Certification Program for No-Code AI & Emerging Technologies Skills
+            Global Gold Standard Certification Program for No-Code AI & Emerging
+            Technologies Skills
           </div>
 
           {/* PRICING BOX */}
@@ -621,26 +613,28 @@ const Home = () => {
             </div>
           </div>
           <div className="flex justify-center items-center flex-col bg-white text-center max-w-md mx-auto mt-2">
-
-          {auth?.user ? (
-            <button
-              onClick={() => setShowPopup(true)}
-              disabled={paymentId}
-              className={`bg-[#006666] text-white text-2xl px-6 py-2 rounded hover:bg-[#004d4d] transition duration-200 cursor-pointer bg-gradient-to-r w-[330px] sm:w-[450px] from-[#03257e] via-[#006666] to-[#F14419] ${paymentId ? "opacity-50 cursor-not-allowed" : ""}`}
-            >
-              Register Here
-            </button>
-          ) : (
-            <Link
-              className="bg-[#006666] text-white text-2xl px-6 py-2 rounded border-1 hover:bg-white hover:text-[#006666]  transition duration-300 cursor-pointer w-[330px] sm:w-[450px]"
-              to="/sign-up"
-            >
-              Register Here
-            </Link>
-          )}
-        </div>
+            {auth?.user ? (
+              <button
+                onClick={() => setShowPopup(true)}
+                disabled={paymentId}
+                className={`bg-[#006666] text-white text-2xl px-6 py-2 rounded hover:bg-[#004d4d] transition duration-200 cursor-pointer bg-gradient-to-r w-[330px] sm:w-[450px] from-[#03257e] via-[#006666] to-[#F14419] ${
+                  paymentId ? "opacity-50 cursor-not-allowed" : ""
+                }`}
+              >
+                Register Here
+              </button>
+            ) : (
+              <Link
+                className="bg-[#006666] text-white text-2xl px-6 py-2 rounded border-1 hover:bg-white hover:text-[#006666]  transition duration-300 cursor-pointer w-[330px] sm:w-[450px]"
+                to="/sign-up"
+              >
+                Register Here
+              </Link>
+            )}
+          </div>
         </div>
       </div>
+      <ThreeDot />
       <Footer />
       {showSuccessPopup && (
         <div className="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-30 h-full w-full">
@@ -661,8 +655,9 @@ const Home = () => {
                   You have successfully registered for the CETA Program.
                 </p>
                 <p className="text-gray-600 text-center">
-                  We’ve sent your CETA Program enrollment number to your registered
-                  email address. Please check your inbox or spam folder and save it for future reference.
+                  We’ve sent your CETA Program enrollment number to your
+                  registered email address. Please check your inbox or spam
+                  folder and save it for future reference.
                 </p>
                 <p className="text-blue-600 text-center text-xl font-bold">
                   Thank You !
