@@ -1,5 +1,5 @@
 import { useState, useEffect, useLayoutEffect } from "react";
-import hero from "../assets/HeroImg/hero.jpg";
+import hero from "../assets/HeroImg/hero.avif";
 import aniJson1 from "../components/Animation/registerAnimation.json";
 import UnderstanCeta from "../components/HomePageSection/UnderstanCeta";
 import Lottie from "lottie-react";
@@ -108,7 +108,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-   
+
       <div className="flex justify-center flex-col items-center w-full overflow-hidden">
         <p className="text-[#03257E] text-[25px] sm:text-[40px] md:text-[50px] font-bold uppercase text-center">
           Awards & Recognitions
@@ -280,7 +280,7 @@ const Home = () => {
           Tech
         </p>
       </div>
-     <ThreeDot />
+      <ThreeDot />
       <div className="flex flex-col justify-center items-center gap-8">
         <p className="text-[#03257E] text-[25px] sm:text-[40px] md:text-[50px] font-bold uppercase text-center">
           Meet Our executives
