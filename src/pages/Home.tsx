@@ -100,8 +100,8 @@ const Home = () => {
                 CETA - Certified Emerging Technologies Analyst | No-Code
               </p>
             </div>
-            {auth?.user?<Link to="login" className="text-[#03257e] bg-white rounded-full px-6 py-1 mt-2 font-bold">Login</Link>
-          :<a href="#ceta" className={`text-[#f14419] bg-white rounded-full px-2 py-1 mt-2 font-bold ${paymentId ? "opacity-50 pointer-events-none" : ""}`}>{paymentId?"Registered":"Join CETA Program"}</a>}
+            {!auth?.user?<Link to="login" className="text-[#03257e] sm:text-xl bg-white rounded-full px-6 py-1 sm:py-2 mt-2 font-bold">Login</Link>
+          :<a href="#ceta" className={`text-[#f14419] bg-white rounded-full px-2 sm:px-4 py-1 sm:py-2 mt-2 font-bold ${paymentId ? "opacity-50 pointer-events-none" : ""}`}>{paymentId?"Registered":"Join CETA Program"}</a>}
           </div>
           <div className="absolute bottom-0 z-10 sm:flex flex-col w-full items-center justify-center text-center bg-gradient-to-r from-[#03257E] via-[#f14419] to-[#006666] p-1">
             <p className="text-[8px] sm:text-[18px] md:text-[25px] font-bold w-[100%] text-center">
