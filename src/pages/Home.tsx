@@ -1,5 +1,5 @@
 import { useState, useEffect, useLayoutEffect } from "react";
-import hero from "../assets/HeroImg/hero.jpg";
+import hero from "../assets/HeroImg/hero.avif";
 import aniJson1 from "../components/Animation/registerAnimation.json";
 import UnderstanCeta from "../components/HomePageSection/UnderstanCeta";
 import Lottie from "lottie-react";
@@ -30,6 +30,7 @@ import { useAuth } from "../context/auth";
 import { Link } from "react-router-dom";
 import { FaLinkedinIn } from "react-icons/fa";
 import ThreeDot from "../components/HomePageSection/ThreeDot";
+import WhyCeta from "../components/HomePageSection/WhyCeta";
 // import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const Home = () => {
@@ -95,7 +96,7 @@ const Home = () => {
           {/* Text content on image */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col w-full items-center justify-center text-center">
             <div className="bg-[#03257E] text-white px-2  sm:rounded-full shadow-lg">
-              <p className="text-[16px] text-white sm:text-white sm:text-[20px] md:text-[28px] lg:text-[40px] font-bold w-[100%] text-center py-1 sm:py-2">
+              <p className="text-[16px] text-white sm:text-white sm:text-[20px] md:text-[28px] lg:text-[40px] font-bold w-[100%] text-center py-1 sm:py-2 lg:px-2">
                 CETA - Certified Emerging Technologies Analyst | No-Code
               </p>
             </div>
@@ -243,6 +244,8 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <ThreeDot />
+      <WhyCeta/>
       <ThreeDot />
       <UnderstanCeta />
       <ThreeDot />

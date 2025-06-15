@@ -32,7 +32,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex justify-between items-center p-4">
+    <div className="flex justify-between items-center px-2">
       <img src={logo} className="w-fit h-24 sm:h-30 md:h-38"></img>
       <div
         className="flex justify-center items-center gap-1 w-full lg:hidden cursor-pointer"
