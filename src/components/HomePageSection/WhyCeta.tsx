@@ -60,8 +60,8 @@ const WhyCeta = () => {
           Why CETA ?
         </p>
         <div className='flex justify-center items-center md:gap-8 lg:gap-40 lg:px-20'>
-            <div className='flex flex-col justify-center items-center gap-4'>
-                <p className='text-[#03257e] text-[16px] sm:text-[20px] md:text-[30px] w-max-[700px] text-center font-bold'>Why No-Code AI & Emerging Tech Education Matters?</p>
+            <div className='flex flex-col justify-center items-center gap-4 px-4'>
+                <p className='text-[#03257e] text-[20px] sm:text-[25px] md:text-[30px] w-max-[700px] text-center font-bold'>Why No-Code AI & Emerging Tech Education Matters?</p>
                 <p className='text-black w-max-[700px] text-center'>In today’s fast-evolving digital world, technical skills are no longer just for coders. With the rise of no-code platforms and tools, anyone can now build AI-driven solutions, harness the power of Generative AI, and innovate using emerging technologies—without needing to write a single line of code</p>
                 <p className='text-black w-max-[700px] text-center'>CETA by Edubuk empowers students, educators, and professionals from all backgrounds to stay future-ready and industry-relevant by enabling practical, hands-on skilling in AI and emerging technologies using simple, intuitive, no-code tools.</p>
             </div>
@@ -70,7 +70,7 @@ const WhyCeta = () => {
             </div>
         </div> 
         <div className='flex flex-col justify-center items-center w-full'>
-            <p className='text-[#03257e] text-[16px] sm:text-[20px] md:text-[30px] text-center font-bold'>Key Reasons Why No-Code & Emerging Tech Skilling is Crucial?</p>
+            <p className='text-[#03257e] text-[20px] sm:text-[25px] md:text-[30px] text-center font-bold px-4'>Key Reasons Why No-Code & Emerging Tech Skilling is Crucial?</p>
             <div className='flex flex-wrap justify-center items-center'>
                 {keyData.map((item, index) => (
                     <div key={index} className={`flex flex-col justify-center items-center gap-2 m-4  rounded-[20px] shadow-lg w-[300px]`} style={{backgroundColor:`${item.iconBg}`}}>
