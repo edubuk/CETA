@@ -27,12 +27,12 @@ const UnderstanCeta = () => {
                 </clipPath>
               </defs>
             </svg>
-            <p className="text-black text-xl sm:text-2xl">
+            <p className="text-black text-xl sm:text-2xl w-fit">
               Long-term in-demand skilling courses at afordable prices using
               no-code tools
             </p>
           </div>
-          <div className="flex items-center justify-center gap-6">
+          <div className="flex items-center justify-center gap-4">
             <svg
               width="65"
               height="65"
@@ -68,12 +68,12 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-xl sm:text-2xl">
+            <p className="text-black text-xl sm:text-2xl w-fit">
               Record CVs of student on blockchain securely for verification
               purposes
             </p>
           </div>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-4">
             <svg
               width="65"
               height="65"
@@ -91,14 +91,14 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-xl sm:text-2xl">
+            <p className="text-black text-xl sm:text-2xl w-fit">
               3-Level CETA skilling program clubbed with certification
               examination
             </p>
           </div>
         </div>
-        <div className="flex flex-col items-center justify-center p-4 gap-4">
-          <div className="flex items-center justify-start gap-3">
+        <div className="flex flex-col items-center justify-center p-4 gap-6">
+          <div className="flex items-center justify-start gap-4">
             <svg
               width="65"
               height="65"
@@ -112,12 +112,12 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-xl sm:text-2xl">
+            <p className="text-black text-xl sm:text-2xl w-fit">
               Extensive industry partners network help students in securing
               placements
             </p>
           </div>
-          <div className="flex items-center justify-center gap-3">
+          <div className="flex items-center justify-center gap-4 ">
             <svg
               width="65"
               height="65"
@@ -131,12 +131,13 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-xl sm:text-2xl">
+            <p className="text-black text-xl sm:text-2xl w-fit">
               Recognized by NSDC as a part of the Skill-India Digital
               Accelerator Program
             </p>
           </div>
-          <div className="flex items-center justify-center gap-3">
+
+          <div className="flex items-center justify-center gap-4 ">
             <svg
               width="65"
               height="65"
@@ -150,7 +151,7 @@ const UnderstanCeta = () => {
               />
             </svg>
 
-            <p className="text-black text-xl sm:text-2xl">
+            <p className="text-black text-xl sm:text-2xl w-fit">
               Cutting Edge Curriculum tailored for students from all streams,
               without any coding background required.
             </p>

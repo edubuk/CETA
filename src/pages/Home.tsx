@@ -38,6 +38,21 @@ const Home = () => {
   const [showSuccessPopup, setShowSuccessPopup] = useState<boolean>(false);
   const [paymentId, setPaymentId] = useState<boolean>(false);
 
+  const courses = [
+  {
+    title: 'GenAI Essentials',
+    color: 'bg-blue-200',
+  },
+  {
+    title: 'Blockchain Mastery',
+    color: 'bg-green-200',
+  },
+  {
+    title: 'Robotics Fundamentals',
+    color: 'bg-yellow-200',
+  },
+];
+
   const [auth] = useAuth();
 
   useEffect(() => {
@@ -97,14 +112,14 @@ const Home = () => {
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 flex flex-col w-full items-center justify-center text-center">
             <div className="bg-[#03257E] text-white px-2  sm:rounded-full shadow-lg">
               <p className="text-[16px] text-white sm:text-white sm:text-[20px] md:text-[28px] lg:text-[40px] font-bold w-[100%] text-center py-1 sm:py-2 lg:px-2">
-                CETA - Certified Emerging Technologies Analyst | No-Code
+                CETA - Certified Emerging Technologies Analyst | No-Code Program
               </p>
             </div>
             {!auth?.user?<Link to="login" className="text-[#03257e] sm:text-xl bg-white rounded-full px-6 py-1 sm:py-2 mt-2 font-bold">Login</Link>
           :<a href="#ceta" className={`text-[#f14419] bg-white rounded-full px-2 sm:px-4 py-1 sm:py-2 mt-2 font-bold ${paymentId ? "opacity-50 pointer-events-none" : ""}`}>{paymentId?"Registered":"Join CETA Program"}</a>}
           </div>
           <div className="absolute bottom-0 z-10 sm:flex flex-col w-full items-center justify-center text-center bg-gradient-to-r from-[#03257E] via-[#f14419] to-[#006666] p-1">
-            <p className="text-[8px] sm:text-[18px] md:text-[25px] font-bold w-[100%] text-center">
+            <p className="text-[8px] text-white sm:text-[18px] md:text-[25px] font-bold w-[100%] text-center">
               Global Gold Standard Certification Program for No-Code AI &
               Emerging Technologies Skills
             </p>
@@ -248,6 +263,34 @@ const Home = () => {
       </div>
       <ThreeDot />
       <WhyCeta/>
+         <section className="w-full bg-gradient-to-br from-[#f1f5f9] to-white py-16 px-6 md:px-20 text-center">
+      <div className="max-w-5xl mx-auto">
+        <h2 className="text-4xl font-bold text-gray-800 mb-4">
+          Explore Our Current Live Courses
+        </h2>
+        <p className="text-lg text-gray-600 mb-10">
+          Learn the latest in technology through expertly curated courses like-
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-6 mb-12">
+          {courses.map((course, idx) => (
+            <div
+              key={idx}
+              className={`w-48 h-64 rounded-xl shadow-lg p-4 flex items-center justify-center text-xl font-semibold text-gray-800 ${course.color} transition-transform transform hover:scale-105`}
+            >
+              {course.title}
+            </div>
+          ))}
+        </div>
+
+        <a
+          href="https://edubuklms.com/"
+          className="bg-[#0f172a] text-white px-6 py-3 rounded-xl text-lg font-medium hover:bg-[#1e293b] transition"
+        >
+          Go to Courses
+        </a>
+      </div>
+    </section>
       <ThreeDot />
       <UnderstanCeta />
       <ThreeDot />
