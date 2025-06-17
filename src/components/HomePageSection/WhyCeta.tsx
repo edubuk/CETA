@@ -51,7 +51,7 @@ const WhyCeta = () => {
             title: "Industry-Aligned Curriculum",
             description: "Based on real use-cases and tools used in modern businesses.",
             icon:keyIcon7,
-            iconBg:"#d9d9d9"
+            iconBg:"#000080"
         }
     ]
   return (
