@@ -179,3 +179,9 @@ button:focus-visible {
   }
 } */
 
+
+.bggradient{
+  background: linear-gradient(to right,#03257e,#006666,#f14419);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
